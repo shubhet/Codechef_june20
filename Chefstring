@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<string.h>
+
+int main(void) {
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    char s1[100000];
+	   // char c=x;
+	    scanf("%s",s1);
+	   long int n = strlen(s1);
+	   // long int n=s1.length();
+        long int c=0;
+        for(long int i=0;i<n-1;i++){
+            if(s1[i]!=s1[i+1]){
+                i++;
+                c++;
+            }
+        }
+        printf("%d\n",c);
+	    
+	}
+	return 0;
+}
+
